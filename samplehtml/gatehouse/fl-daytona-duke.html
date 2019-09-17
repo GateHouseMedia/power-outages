@@ -1,0 +1,78 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Highcharts data from JSON Response</title>
+        <style>
+        body{
+            margin-top: 10px;
+            margin-left:10px;
+        }
+        </style>
+    <script type="text/javascript" src="js/jquery.min.js"></script>      
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript">
+        $(function () {
+                var processed_json = new Array();   
+                $.getJSON('fl-daytona-duke.json', function(data) {
+                    // Populate series
+                    for (i = 0; i < data.length; i++){
+                        processed_json.push([data[i].lastupdated, data[i].outages]);
+                    }
+                 
+                    // draw chart
+                    $('#linechart').highcharts({
+                    chart: {
+                         
+                          
+                },
+                    title: {
+                        text: "Daytona Beach-area Duke Energy customers without power"
+                    },
+                    xAxis: {
+                        type: 'category',
+                        labels: {
+                        padding: 12,
+                                },
+
+                        title: {
+                            text: ""
+                        }
+                    },
+                    yAxis: {
+                        min:0,
+//                        max: 100,
+                        title: {
+                            text: "customers"
+                        }
+                    },
+                   tooltip: {
+                   pointFormat: '{series.name}: <b>{point.y}</b><br>',
+                   valueSuffix: ' customers',
+                    },
+
+                    credits: {
+                         enabled: false
+                     },
+                     
+
+                    series: [{
+                        showInLegend: false,  
+                        name: "Without power",      
+                        data: processed_json,
+                        color: "#FF8C00"
+                    }]
+
+                }); 
+            });
+        });
+    </script>
+</head>
+<body  is="responsive-body">
+  
+    <div id="linechart" style="height:400px; width:100%"></div>
+  
+
+<script src="js/responsive-child.js" type="text/javascript"></script>
+  
+</body>
+</html>

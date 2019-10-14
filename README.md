@@ -52,6 +52,10 @@ If you're on a GateHouse Media CMS, you'll probably want something like this:
 
 [gh:iframe src="https://irma.gatehousemedia.com/misc/somestorm/nc-fayetteville-duke.html"  is="responsive-iframe" width="100%"][/gh:iframe][gh:script src="https://irma.gatehousemedia.com/misc/somestorm/js/responsive-frame.js"][/gh:script]
 
+## Other work
+
+Simon Willison has some data handling tooling for PG&E power outages in California available at https://github.com/simonw/pge-outages , with historical data available through the git commit history. More details are available at https://simonwillison.net/2019/Oct/10/pge-outages/
+
 
 ### Special thanks
 

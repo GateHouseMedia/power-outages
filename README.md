@@ -54,7 +54,9 @@ If you're on a GateHouse Media CMS, you'll probably want something like this:
 
 ## Other work
 
-Simon Willison has some data handling tooling for PG&E power outages in California available at https://github.com/simonw/pge-outages , with historical data available through the git commit history. More details are available at https://simonwillison.net/2019/Oct/10/pge-outages/
+Simon Willison, @simonw, has some data handling tooling for PG&E power outages in California available at https://github.com/simonw/pge-outages , with historical data available through the git commit history. More details are available at https://simonwillison.net/2019/Oct/10/pge-outages/
+
+Jesse Hazel, @jwhazel, offers up this Kentucky site for seeing all statewide outages: https://psc.ky.gov/ors/PublicInfo_OutageIncidents.aspx
 
 
 ### Special thanks

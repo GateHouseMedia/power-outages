@@ -23,6 +23,8 @@ def jsonme():
     zones = {
         "fl-statewide": '("Statewide")',
         "fl-palmbeach": '("Palm Beach")',
+        "fl-floridatoday": '("Brevard")',
+        "fl-tcpalm": '("Martin", "St. Lucie", "Indian River")',
         "fl-daytona": '("Volusia", "Flagler")'   # Danger!
     }
 

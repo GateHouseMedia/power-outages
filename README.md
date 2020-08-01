@@ -1,7 +1,7 @@
 
 # Power outage tools
 
-This is a collection of tools used to monitor power outages. The initial release included Florida Power & Light, Duke Energy and North Carolina EMC customers in Florida, South Carolina, North Carolina, Indiana, Ohio and Kentucky.
+This is a collection of tools used to monitor power outages. The initial release included Florida Power & Light, North Carolina EMC customers, and Duke Energy customers in Florida, South Carolina, North Carolina, Indiana, Ohio and Kentucky. Other scrapers and datasets are linked from a section below.
 
 This is a sister project to Hurricane Tools, found at https://github.com/GateHouseMedia/hurricane-tools
 
@@ -51,6 +51,12 @@ If you need to implement widgets, you can try it something like this -- watch wh
 If you're on a GateHouse Media CMS, you'll probably want something like this:
 
 [gh:iframe src="https://irma.gatehousemedia.com/misc/somestorm/nc-fayetteville-duke.html"  is="responsive-iframe" width="100%"][/gh:iframe][gh:script src="https://irma.gatehousemedia.com/misc/somestorm/js/responsive-frame.js"][/gh:script]
+
+## Other work
+
+Simon Willison, @simonw, has released some scrapers and datasets at https://github.com/simonw/disaster-data . He has some data handling tooling for PG&E power outages in California available at https://github.com/simonw/pge-outages , with historical data available through the git commit history. More details are available at https://simonwillison.net/2019/Oct/10/pge-outages/  
+
+Jesse Hazel, @jwhazel, offers up this Kentucky site for seeing all statewide outages: https://psc.ky.gov/ors/PublicInfo_OutageIncidents.aspx
 
 
 ### Special thanks
